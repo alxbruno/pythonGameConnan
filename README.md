@@ -43,7 +43,17 @@ Run `cat /etc/issue` in order to check the container OS (`Debian GNU/Linux 11 \n
         smmap      5.0.1
         wheel      0.42.0
         ```
-
+- [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)
+- [How to Set Up a Virtual Environment in Python – And Why It's Useful](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
+    - `pip<version> install virtualenv`
+    - `python<version> -m venv <virtual-environment-name>`
+    - `source env/bin/activate`
+    - `pip<version> install <your project packages>`
+    - `pip<version> list`
+    - Your installed packages should be installed
+    - `pip freeze > requirements.txt`
+    - `~ pip install -r requirements.txt`
+    - `~ deactivate`
 
 ## [Development Containers - Using Images, Dockerfiles, and Docker Compose](https://containers.dev/guide/dockerfile)
 
