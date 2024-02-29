@@ -13,6 +13,7 @@ This is the git installed inside the container, not in the OS itself `git config
 
 Run `cat /etc/issue` in order to check the container OS.
 
+cd '/vscode/vscode-server/extensionsCache' && ls -t | tail -n +50 | xargs rm -f
 
 ### Resources
 https://github.com/alxbruno/template-starter
