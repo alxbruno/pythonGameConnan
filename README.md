@@ -44,17 +44,6 @@ Run `cat /etc/issue` in order to check the container OS (`Debian GNU/Linux 11 \n
         wheel      0.42.0
         ```
 
-### Resources
-- https://github.com/alxbruno/template-starter
-
-- https://github.com/devcontainers
-
-- https://github.com/microsoft/vscode-dev-containers/blob/main/containers/python-3/README.md
-
-- https://github.com/microsoft/vscode-dev-containers/tree/main/containers
-
-- https://github.com/docker-library/official-images/blob/master/library/python
-
 
 ## [Development Containers - Using Images, Dockerfiles, and Docker Compose](https://containers.dev/guide/dockerfile)
 
@@ -67,3 +56,35 @@ FROM mcr.microsoft.com/devcontainers/python:1-3.12-bullseye
 # Install the xz-utils package
 RUN apt-get update && apt-get install -y xz-utils
 ```
+
+> Next, remove the image property from `devcontainer.json` (if it exists) and add the build and dockerfile properties instead:
+```
+"build": {
+        // Path is relative to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+    }
+```
+
+### [Using Docker Compose](https://containers.dev/guide/dockerfile#docker-compos)
+> ... to be continued
+
+
+
+
+
+### Resources
+- https://github.com/alxbruno/template-starter
+
+- https://github.com/devcontainers
+
+- https://github.com/microsoft/vscode-dev-containers/blob/main/containers/python-3/README.md
+
+- https://github.com/microsoft/vscode-dev-containers/tree/main/containers
+
+- https://github.com/docker-library/official-images/blob/master/library/python
+
+
+- [GitHb - microsoft/vscode-dev-containers](https://github.com/microsoft/vscode-dev-containers)
+    - [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+- [Development Containers](https://containers.dev/)
