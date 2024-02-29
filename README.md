@@ -98,3 +98,5 @@ RUN apt-get update && apt-get install -y xz-utils
     - [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 - [Development Containers](https://containers.dev/)
+
+- [devcontainers/templates](https://github.com/devcontainers/templates/tree/main/src/python)
